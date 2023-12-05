@@ -9,7 +9,7 @@
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img class="logo" src="./assets/FES.svg" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -17,55 +17,66 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn Frontend</h1>
-          <p>
-            Go from being an absolute beginner to pro with a simplified process
-          </p>
-          <button>Start now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to pro with a simplified
+              process
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="" />
-        </figure>
       </header>
     </section>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            eveniet vel rem ipsum ullam tempora accusamus omnis eius voluptatem
-            adipisci?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-            dolorem nam, saepe voluptate animi repellat iusto ea reiciendis
-            numquam! Mollitia.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia eveniet vel rem ipsum ullam tempora accusamus omnis eius
+                voluptatem adipisci?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                dolorem nam, saepe voluptate animi repellat iusto ea reiciendis
+                numquam! Mollitia.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            magni provident sed aperiam officiis odit mollitia optio obcaecati
-            exercitationem explicabo?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            ratione quia vero dolore quis facere maxime beatae impedit eos
-            consequatur.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="./assets/discord.png" alt="" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                magni provident sed aperiam officiis odit mollitia optio
+                obcaecati exercitationem explicabo?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aperiam ratione quia vero dolore quis facere maxime beatae
+                impedit eos consequatur.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -73,21 +84,24 @@
         <h2>Contact</h2>
         <form action="">
           <label for="email">Email</label>
-          <input type="text" placeholder="alex@example.com" />
+          <input type="email" placeholder="alex@example.com" />
           <label for="message">Message</label>
-          <textarea type="text" placeholder="alex@example.com"></textarea>
+          <textarea
+            type="text"
+            placeholder="Cool website, lets get connected!"
+          ></textarea>
           <button>Submit</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <img src="./assets/FES.svg" alt="" />
-      <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Courses</a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
       </div>
       <p>Copyright Frontend Simplified</p>
     </footer>
